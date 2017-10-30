@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gogol</title>
+    <base href="/">
+    <link rel="icon" type="image/png" href="img/Cornmanthe3rd-Plex-Communication-gmail.ico" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://use.fontawesome.com/6233ba8e74.js"></script>
+    <script src="js/angular-route.js"></script>
+</head>
+
+<body ng-controller='Ctrl'>
+    <div class="firstPage">
+        <div class="login">
+            <div class="logo">
+                <p><span>G</span><span>oo</span><span>gо</span><span>l'</span></p>
+            </div>
+            <section class="sec4">
+                <div class="ver">
+                    <p>Введіть код, отриманий у SMS</p>
+                    <input type="text" ng-model='newCode' class="codeInp">
+                    <br>
+                    <br>
+                    <button ng-click='fCreate()'>Далі</button>
+                </div>
+            </section>
+            <div class="mailArea">
+                <div class="sendMail">
+                    <p class="userName"></p> <span class="usermail"></span><i class="fa fa-arrow-circle-left close" aria-hidden="true"></i>
+                    <br>
+                    <br>
+                    <hr>
+                    <p id="sal">Надіслати листа:</p>
+                    <hr>
+                    <form name="myForm3" novalidate>
+<!--
+                        <label>Від:</label>
+                        <br>
+                        <input type="text" ng-model="fromUser" class="sendFrom" name="fromUser" required>
+                        <p ng-show="myForm3.fromUser.$touched && myForm3.fromUser.$invalid" class='req3'>Field is required.</p>
+                        <br>
+-->
+                        <br>
+                        <label>Кому:</label>
+                        <br>
+                        <input type="text" ng-model="toUser" class="sendTo" name="toUser" required>
+                        <p ng-show="myForm3.toUser.$touched && myForm3.toUser.$invalid" class='req3'>Field is required.</p>
+                        <br>
+                        <br>
+                        <label>Повідомлення:</label>
+                        <br>
+                        <textarea ng-model="textUser" class="sendText" name="textUser" required></textarea>
+                        <p ng-show="myForm3.textUser.$touched && myForm3.textUser.$invalid" class='req3'>Field is required.</p>
+                        <br>
+                        <br>
+                        <button ng-click="sendLetter()" class="sendLetterBtn" ng-disabled="myForm3.$invalid">Send</button>
+                    </form>
+                </div>
+                <div class="letters">
+                    <p>Отримані листи:</p>
+                    <br>
+                    <br>
+                    <hr>
+                    <input type="button" value="Check" ng-click="check()" class="checkLett"> <i class="fa fa-eye hide" aria-hidden="true"></i>
+                    <input type="text" id="filter" ng-model="Tfilter">
+                    <div ng-repeat="a in arr| filter:Tfilter track by $index" class="message"> <span id='ftt'>Від кого:</span>
+                        <br>
+                        <div class="textLet">{{a.from}}</div>
+                        <br> <span id='ftt'>Кому:</span>
+                        <br>
+                        <div class="textLet">{{a.to}}</div>
+                        <br> <span id='ftt'>Повідомлення:</span>
+                        <br>
+                        <div class="textLet">{{a.text}}</div>
+                        <br> </div>
+                </div>
+                <div class="sendLetters">
+                    <p>Відправлені листи:</p>
+                    <br>
+                    <br>
+                    <hr>
+                    <input type="button" value="Check" class="checkLett2" ng-click='check2()'> <i class="fa fa-eye hide2" aria-hidden="true"></i>
+                    <input type="text" id="filter" ng-model="Tfilter2">
+                    <div ng-repeat="a2 in arr2|filter:Tfilter2 track by $index" class="message2"> <span id='ftt2'>Кому:</span>
+                        <br>
+                        <div class="textLet2">{{a2.to}}</div>
+                        <br> <span id='ftt2'>Повідомлення:</span>
+                        <br>
+                        <div class="textLet2">{{a2.text}}</div>
+                        <br> </div>
+                </div>
+            </div>
+            <section class="sec1">
+                <header>
+                    <p>Увійти</p>
+                    <p>Перейдіть у Gogol'Mail</p>
+                </header>
+                <form name='myForm1' novalidate>
+                    <div class="mailBlock">
+                        <input type="text" class="mail" id="mail" placeholder="Електронна адреса aбо номер телефону" ng-model='login' name='login' required>
+                        <p class="req1">Enter your login(nickname).</p>
+                    </div>
+                    <br>
+                    <br> <a href="#" class="forget">Забули електронну адресу?</a>
+                    <br>
+                    <br>
+                    <br> <a href="#" class='more createAcc'>Створити обліковий запис</a>
+                    <button class="nextBtn">ДАЛІ</button>
+                </form>
+            </section>
+            <section class="sec2">
+                <form name="myForm4" novalidate>
+                    <p class="userName"></p> <span class="usermail"></span> <i class="fa fa-arrow-circle-left gob1" aria-hidden="true"></i>
+                    <input type="password" class="passInput" ng-model='myPass' placeholder="Введіть пароль" required><span id="req3">Wrong pass.</span>
+                    <br>
+                    <br>
+                    <br>
+                    <br> <a href="#" class="forget">Забули пароль?</a>
+                    <button class="nextBtn" id="auth" ng-click='auth()' ng-disabled="myForm4.$invalid">ДАЛІ</button>
+                </form>
+            </section>
+            <section class="sec3">
+                <form name='myForm2' novalidate>
+                    <h1>Створити обліковий запис Gogol'</h1>
+                    <p>Ім'я</p>
+                    <input type="text" required ng-model='name' name='name' class='usInf'>
+                    <p ng-show="myForm2.name.$touched && myForm2.name.$invalid" class='req2'>Field is required.</p>
+                    <p>Виберіть ім'я користувача</p>
+                    <input type="text" required ng-model="nick" name='nick' class='usInf'>
+                    <p ng-show="myForm2.nick.$touched && myForm2.nick.$invalid" class='req2'>Field is required.</p>
+                    <p>Створіть пароль</p>
+                    <input type="password" required ng-model="pass" name='pass' class='usInf'>
+                    <p ng-show="myForm2.pass.$touched && myForm2.pass.$invalid" class='req2'>Field is required.</p>
+                    <p>Підтвердіть пароль</p>
+                    <input type="password" required ng-model="rePass" name='rePass' class='usInf'>
+                    <p ng-show="myForm2.rePass.$touched && myForm2.rePass.$invalid" class='req2'>Field is required.</p>
+                    <p>Стать</p>
+                    <select ng-model='gender' name='gender' required>
+                        <option selected>Male</option>
+                        <option>Female</option>
+                    </select>
+                    <p ng-show="myForm2.gender.$touched && myForm2.gender.$invalid" class='req2'>Field is required.</p>
+                    <p>Мобільний телефон</p>
+                    <input class='usInf' type="text" required ng-model="phone" name="phone">
+                    <p ng-show="myForm2.phone.$touched && myForm2.phone.$invalid" class='req2'>Field is required.</p> <i class="fa fa-arrow-circle-left back2btn" aria-hidden="true"></i>
+                    <button ng-disabled="myForm2.$invalid" ng-click='createNew()' class="verif">Далі</button>
+                </form>
+            </section>
+        </div>
+        <div class="footer1"> <a href="#">Українська</a> <a href="https://support.google.com/accounts?hl=ru#topic=3382296" target="_blank">Довідка</a> <a href="https://www.google.com.ua/intl/ru/policies/privacy/" target="_blank">Конфіденційність</a> <a href="https://www.google.com.ua/intl/ru/policies/terms/regional.html" target="_blank">Умови</a> </div>
+    </div>
+    <script src="js/jqueryAnimation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

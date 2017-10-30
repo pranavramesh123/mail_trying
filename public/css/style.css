@@ -1,0 +1,547 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: whitesmoke;
+}
+
+.firstPage {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    height: 450px;
+    width: 400px;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 1px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.logo {
+    padding-top: 35px;
+    padding-bottom: 17px;
+    padding-left: 33px;
+}
+
+.logo p {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.logo span:first-child {
+    font-size: 23px;
+    color: #4285f4;
+}
+
+.logo span:nth-child(2) {
+    font-size: 18px;
+    color: red;
+}
+
+.logo span:nth-child(3) {
+    font-size: 18px;
+    color: green;
+}
+
+.logo span:nth-child(4) {
+    font-size: 18px;
+    color: #4285f4;
+}
+
+header p:first-child {
+    font-family: "Roboto";
+    margin-left: 33px;
+    font-size: 21px;
+}
+
+header p:nth-child(2) {
+    font-family: "Roboto";
+    margin-left: 33px;
+    font-size: 13px;
+    margin-bottom: 60px;
+}
+
+.mail {
+    font-family: "Roboto";
+    margin-left: 33px;
+    border: none;
+    height: 22px;
+    border-bottom: 1px solid lightgrey;
+    transition: 1.5s;
+    width: 80%;
+}
+
+.mail::placeholder {
+    font-size: 13px;
+}
+
+.mailBlock:before {
+    content: 'Електронна адреса або номер телефону';
+    font-family: "Roboto";
+    color: #4285f4;
+    font-size: 10px;
+    margin-left: 32.4px;
+    display: none;
+    transition: 1s;
+}
+
+.mailBlock p {
+    position: absolute;
+    margin-left: 33px;
+    font-family: "Roboto";
+    font-size: 12px;
+    color: red;
+    margin-top: 3px;
+    display: none;
+}
+
+.forget,
+.more {
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #4285f4;
+    margin-left: 33px;
+    font-size: 13px;
+}
+
+.nextBtn {
+    font-family: 'Roboto';
+    float: right;
+    margin-right: 47px;
+    margin-top: -5px;
+    background: #4285f4;
+    border-bottom: 9px solid #4285f4;
+    border-top: 7px solid #4285f4;
+    border-left: 25px solid #4285f4;
+    border-right: 25px solid #4285f4;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.footer1 {
+    display: flex;
+}
+
+.footer1 a:first-child {
+    font-family: 'Roboto';
+    margin-top: 500px;
+    margin-left: -400px;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.footer1 a:nth-child(2) {
+    font-family: 'Roboto';
+    margin-top: 500px;
+    margin-left: 115px;
+    font-size: 12px;
+    color: grey;
+    text-decoration: none;
+}
+
+.footer1 a:nth-child(3) {
+    font-family: 'Roboto';
+    margin-top: 500px;
+    margin-left: 20px;
+    font-size: 12px;
+    color: grey;
+    text-decoration: none;
+}
+
+.footer1 a:nth-child(4) {
+    font-family: 'Roboto';
+    margin-top: 500px;
+    font-size: 12px;
+    margin-left: 20px;
+    color: grey;
+    text-decoration: none;
+}
+
+.sec1 {
+    position: relative;
+    /*    right: 100%;*/
+}
+
+.sec2 {
+    position: relative;
+    bottom: 50%;
+    font-family: 'Roboto';
+    left: 100%;
+}
+
+.sec2 p,
+.mailArea p {
+    font-size: 20px;
+    margin-left: 33px;
+    margin-top: -5px
+}
+
+.sec2 span,
+.mailArea span {
+    margin-top: 1px;
+    font-size: 12px;
+    margin-left: 33px;
+    color: darkslategray;
+}
+
+.sec2 i {
+    left: 83%;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+.sec2 i:hover {
+    color: grey;
+    text-shadow: 0 0 2px black, 0 0 1em #4285f4;
+}
+
+.passInput {
+    margin-left: 30px;
+    border: none;
+    height: 22px;
+    border-bottom: 1px solid lightgrey;
+    transition: 1s;
+    width: 80%;
+    margin-top: 57px;
+}
+
+.sec2 .forget {
+    margin-left: 30px;
+}
+
+.sec3 {
+    position: relative;
+    left: 100%;
+    font-family: 'Roboto';
+    bottom: 110%;
+    margin-left: 33px;
+    box-sizing: border-box;
+}
+
+.sec3 h1 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.sec3 p {
+    font-size: 13px;
+    margin-top: 17px;
+}
+
+.sec3 p:nth-child(2) {
+    margin-top: 4px;
+}
+
+.sec3 input,
+select {
+    height: 25px;
+    width: 225px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.sec3 button {
+    float: right;
+    margin-right: 140px;
+    margin-top: 20px;
+    background: #4285f4;
+    border-bottom: 7px solid #4285f4;
+    border-top: 5px solid #4285f4;
+    border-left: 25px solid #4285f4;
+    border-right: 25px solid #4285f4;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.sec3 i {
+    position: absolute;
+    bottom: -45px;
+    right: 345px;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.sec3 i:hover {
+    color: grey;
+    text-shadow: 0 0 2px black, 0 0 1em #4285f4;
+}
+
+.sec3 .req2 {
+    position: absolute;
+    font-size: 10px;
+    margin-top: 2px;
+    color: red;
+}
+
+.sec4 {
+    margin-top: -30px;
+    position: absolute;
+    background: whitesmoke;
+    height: 50%;
+    width: 50%;
+    z-index: 1;
+    left: 25%;
+    border: 1.5px solid grey;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    font-family: 'Roboto';
+    visibility: hidden;
+}
+
+.ver {
+    text-align: center;
+    margin-top: 15%;
+}
+
+.ver p {
+    font-size: 18px;
+}
+
+.ver input {
+    margin-top: 10px;
+    height: 35px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ver button {
+    background: #4285f4;
+    border-bottom: 9px solid #4285f4;
+    border-top: 7px solid #4285f4;
+    border-left: 25px solid #4285f4;
+    border-right: 25px solid #4285f4;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.codeInp::placeholder {
+    font-family: 'Roboto';
+    color: red;
+}
+
+.mailArea {
+    position: absolute;
+    background: whitesmoke;
+    bottom: 10%;
+    height: 80%;
+    width: 80%;
+    z-index: 1;
+    right: 10%;
+    border: 1.5px solid grey;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    font-family: 'Roboto';
+    visibility: hidden;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sendMail {
+    border: 1px solid #4285f4;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    height: 90%;
+    width: 30%;
+}
+
+.letters {
+    height: 90%;
+    width: 30%;
+    border: 1px solid #4285f4;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    overflow-x: hidden;
+}
+
+.sendMail span {
+    border-bottom: 1px solid #4285f4;
+}
+
+.mailArea p {
+    margin-top: 15px;
+}
+
+#sal {
+    font-size: 16px;
+    font-family: 'Roboto';
+    margin-bottom: 16px;
+    font-weight: 100;
+}
+
+#req3 {
+    font-family: 'Roboto';
+    font-size: 13px;
+    color: red;
+    visibility: hidden;
+}
+
+.sendMail input {
+    height: 25px;
+    width: 45%;
+    border: 1px solid grey;
+    border-radius: 3px;
+    margin-left: 30px;
+}
+
+.sendMail label {
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+.sendMail label:first-child {
+    margin-top: 10px;
+}
+
+.sendMail textarea {
+    border: 1px solid grey;
+    border-radius: 3px;
+    margin-left: 30px;
+    width: 80%;
+    height: 100px;
+}
+
+.sendMail button {
+    background: #4285f4;
+    border-bottom: 9px solid #4285f4;
+    border-top: 7px solid #4285f4;
+    border-left: 25px solid #4285f4;
+    border-right: 25px solid #4285f4;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    float: right;
+    margin-right: 5%;
+}
+
+.sendMail i {
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 55px;
+    margin-top: -10px;
+    position: absolute;
+}
+
+.sendMail i:hover {
+    color: grey;
+    text-shadow: 0 0 2px black, 0 0 1em #4285f4;
+}
+
+.checkLett,
+.checkLett2 {
+    background: #4285f4;
+    border-bottom: 9px solid #4285f4;
+    border-top: 7px solid #4285f4;
+    border-left: 25px solid #4285f4;
+    border-right: 25px solid #4285f4;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    margin: 5%;
+}
+
+.message,
+.message2 {
+    border: 1px solid #4285f4;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin: 5px;
+    width: 95%;
+    overflow-x: auto;
+}
+
+#ftt,
+#ftt2 {
+    font-family: 'Roboto';
+    font-size: 13px;
+    float: left;
+    margin-left: 2%;
+    color: grey;
+    text-decoration: underline;
+}
+
+.textLet,
+.textLet2 {
+    text-align: center;
+}
+
+.hide,
+.hide2 {
+    visibility: hidden;
+}
+
+.hide:hover,
+.hide2:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+.usInf::placeholder {
+    color: red;
+}
+
+#filter,
+#filter2 {
+    margin-left: 15px;
+    height: 25px;
+    width: 45%;
+    border: 1px solid grey;
+    border-radius: 3px;
+    margin-right: 3px;
+}
+
+.req3 {
+    position: absolute!important;
+    color: red!important;
+    font-size: 10px!important;
+    margin-top: 2px!important;
+}
+
+button:disabled {
+    color: black;
+    transition: 0.3s;
+}
+
+.sendLetters {
+    border: 1px solid #4285f4;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    height: 90%;
+    width: 30%;
+    overflow-x: hidden;
+}
