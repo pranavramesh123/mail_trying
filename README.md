@@ -8,3 +8,5 @@ and impossibility of mailing to other mail-service. Next step was creating datab
 accession to it and also creating sms-verification of registration new user. Sms verification based on Twilio module for NodeJs, 
 that allows to generate and send sms to phone numbers. At present time all functions of my mail service are ready for usage, now
 im working at design improvment, adaptivity and security of user mails and personal information.
+
+2.11.17 Added practile animations to main window via Practile.js. Animations are stable(40-50fps.)
