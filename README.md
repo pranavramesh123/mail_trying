@@ -10,4 +10,5 @@ that allows to generate and send sms to phone numbers. At present time all funct
 im working at design improvment, adaptivity and security of user mails and personal information.
 
 2.11.17 Added practile animations to main window via Practile.js. Animations are stable(40-60fps).
-7.11.17 Created CSS3 preloader and added to a site/
+7.11.17 Created CSS3 preloader and added to a site
+30.11.17 Updated CSS3: added vendor prefixes that allows to normally use it in Opera/FireFox/Safari
