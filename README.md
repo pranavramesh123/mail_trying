@@ -9,4 +9,5 @@ accession to it and also creating sms-verification of registration new user. Sms
 that allows to generate and send sms to phone numbers. At present time all functions of my mail service are ready for usage, now
 im working at design improvment, adaptivity and security of user mails and personal information.
 
-2.11.17 Added practile animations to main window via Practile.js. Animations are stable(40-50fps.)
+2.11.17 Added practile animations to main window via Practile.js. Animations are stable(40-60fps).
+7.11.17 Created CSS3 preloader and added to a site/
