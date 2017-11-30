@@ -67,6 +67,7 @@ app.controller('Ctrl', function ($scope, $http) {
                     borderBottom: '1px solid lightgrey'
                 });
                 $scope.myForm4.$invalid = true;
+                break;
             }
             else {
                 $('#req3').css({

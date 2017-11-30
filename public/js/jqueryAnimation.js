@@ -1,12 +1,12 @@
 $(document).ready(function () {
     setTimeout(function () {
         $('body').addClass('loaded');
-    }, 2000);
+    }, 500);
     setTimeout(function () {
         $('.pl').css({
             zIndex: 'auto'
         });
-    }, 2700)
+    }, 1200)
 });
 //return to login-enter window animation
 $('.gob1').on('click', function () {

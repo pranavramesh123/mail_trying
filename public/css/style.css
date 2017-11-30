@@ -28,6 +28,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -o-justify-content: center;
 }
 
 .login {
@@ -36,8 +39,17 @@ body {
     background: white;
     border: 1px solid lightgray;
     border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -o-border-radius: 1px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
     overflow: hidden;
 }
 
@@ -92,6 +104,9 @@ header p:nth-child(2) {
     height: 22px;
     border-bottom: 1px solid lightgrey;
     transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -o-transition: 1.5s;
     width: 80%;
 }
 
@@ -107,6 +122,9 @@ header p:nth-child(2) {
     margin-left: 32.4px;
     display: none;
     transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
 }
 
 .mailBlock p {
@@ -139,10 +157,16 @@ header p:nth-child(2) {
     border-left: 25px solid #4285f4;
     border-right: 25px solid #4285f4;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
     font-size: 12px;
     font-weight: 800;
     color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     cursor: pointer;
 }
 
@@ -218,6 +242,9 @@ header p:nth-child(2) {
     cursor: pointer;
     position: absolute;
     transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
     font-size: 20px;
 }
 
@@ -300,6 +327,9 @@ select {
 .sec3 i:hover {
     color: grey;
     text-shadow: 0 0 2px black, 0 0 1em #4285f4;
+    -webkit-text-shadow: 0 0 2px black, 0 0 1em #4285f4;
+    -moz-text-shadow: 0 0 2px black, 0 0 1em #4285f4;
+    -o-text-shadow: 0 0 2px black, 0 0 1em #4285f4;
 }
 
 .sec3 .req2 {
@@ -319,7 +349,13 @@ select {
     left: 25%;
     border: 1.5px solid grey;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     font-family: 'Roboto';
     visibility: hidden;
 }
@@ -338,7 +374,13 @@ select {
     height: 35px;
     border: 1px solid lightgrey;
     border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
 }
 
 .ver button {
@@ -348,6 +390,9 @@ select {
     border-left: 25px solid #4285f4;
     border-right: 25px solid #4285f4;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
     font-size: 12px;
     font-weight: 800;
     color: white;
@@ -370,11 +415,20 @@ select {
     right: 10%;
     border: 1.5px solid grey;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     font-family: 'Roboto';
     visibility: hidden;
     display: flex;
     justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -o-justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -382,7 +436,13 @@ select {
 .sendMail {
     border: 1px solid #4285f4;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     height: 90%;
     width: 30%;
 }
@@ -394,6 +454,9 @@ select {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     overflow-x: hidden;
 }
 
@@ -424,6 +487,9 @@ select {
     width: 45%;
     border: 1px solid grey;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
     margin-left: 30px;
 }
 
@@ -439,6 +505,9 @@ select {
 .sendMail textarea {
     border: 1px solid grey;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
     margin-left: 30px;
     width: 80%;
     height: 100px;
@@ -455,6 +524,9 @@ select {
     font-weight: 800;
     color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     cursor: pointer;
     float: right;
     margin-right: 5%;
@@ -462,6 +534,9 @@ select {
 
 .sendMail i {
     transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
     cursor: pointer;
     margin-left: 55px;
     margin-top: -10px;
@@ -471,6 +546,9 @@ select {
 .sendMail i:hover {
     color: grey;
     text-shadow: 0 0 2px black, 0 0 1em #4285f4;
+    -webkit-text-shadow: 0 0 2px black, 0 0 1em #4285f4;
+    -moz-text-shadow: 0 0 2px black, 0 0 1em #4285f4;
+    -o-text-shadow: 0 0 2px black, 0 0 1em #4285f4;
 }
 
 .checkLett,
@@ -481,10 +559,16 @@ select {
     border-left: 25px solid #4285f4;
     border-right: 25px solid #4285f4;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
     font-size: 12px;
     font-weight: 800;
     color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     cursor: pointer;
     margin: 5%;
 }
@@ -536,6 +620,9 @@ select {
     width: 45%;
     border: 1px solid grey;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
     margin-right: 3px;
 }
 
@@ -549,12 +636,18 @@ select {
 button:disabled {
     color: black;
     transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .sendLetters {
     border: 1px solid #4285f4;
     border-radius: 5px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     height: 90%;
     width: 30%;
     overflow-x: hidden;
@@ -571,12 +664,18 @@ button:disabled {
     animation: spin 1s infinite linear;
     z-index: 101;
     transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .round,
 .round:before,
 .round:after {
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .round:after,
@@ -606,9 +705,15 @@ button:disabled {
 @keyframes spin {
     from {
         transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
     }
 }
 
@@ -627,6 +732,9 @@ button:disabled {
     background: #222;
     z-index: 100;
     transition: 0.3s 0.4s;
+    -webkit-transition: 0.3s 0.4s;
+    -moz-transition: 0.3s 0.4s;
+    -o-transition: 0.3s 0.4s;
 }
 
 .pl__left {
@@ -639,12 +747,21 @@ button:disabled {
 
 .loaded .pl__left {
     transform: translate(-100%);
+    -webkit-transform: translate(-100%);
+    -moz-transform: translate(-100%);
+    -o-transform: translate(-100%);
 }
 
 .loaded .pl__right {
     transform: translate(100%);
+    -webkit-transform: translate(100%);
+    -moz-transform: translate(100%);
+    -o-transform: translate(100%);
 }
 
 .loaded .round {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -o-opacity: 0;
     opacity: 0;
 }
